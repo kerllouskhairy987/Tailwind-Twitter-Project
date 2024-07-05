@@ -1,0 +1,55 @@
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2564eb5b;
+}
+
+::-webkit-scrollbar-track {
+    background-color: azure;
+}
+::-moz-scrollbar {
+    width: 4px;
+}
+
+::-moz-scrollbar-thumb {
+    background-color: #2564eb5b;
+}
+
+::-moz-scrollbar-track {
+    background-color: azure;
+}
+::-o-scrollbar {
+    width: 4px;
+}
+
+::-o-scrollbar-thumb {
+    background-color: #2564eb5b;
+}
+
+::-o-scrollbar-track {
+    background-color: azure;
+}
+::-ms-scrollbar {
+    width: 4px;
+}
+
+::-ms-scrollbar-thumb {
+    background-color: #2564eb5b;
+}
+
+::-ms-scrollbar-track {
+    background-color: azure;
+}
+
+::selection {
+    background-color: #2564eb65;
+    color: black;
+}
+
+
+.aside-styling {
+    /* height: calc(100vh - 80px); */
+    
+}

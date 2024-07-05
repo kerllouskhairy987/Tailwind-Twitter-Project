@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <!-- Start Meta Tages ******************-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- Regular Meta Info -->
+    <title>Html + Tailwind</title>
+    <meta charset="utf-8" />
+    <!-- html5 version of http-equiv="Content-Type"... -->
+    <meta
+      name="description"
+      content="Stay updated with the latest news and articles in technology and programming. Follow us for top-notch content and valuable insights."
+    />
+    <meta
+      name="keywords"
+      content="technology, programming, news, articles, tutorials, coding, football, fun"
+    />
+    <link rel="author" href="kerolos khairy" />
+    <link rel="canonical" href="https://kerllouskhairy987.github.io/Tailwind-Twitter-Project" />
+    <!-- Link Of The Main Page From GitHub If I Have Alot Of Same Pages -->
+
+    <!-- Facebook Meta Info -->
+    <!-- <meta property="og:url" content="{{pageUrl}}" /> -->
+    <!-- *********????? -->
+    <meta property="og:image" content="https://kerllouskhairy987.github.io/Tailwind-Twitter-Project/img/twitter-light.jpg" />
+    <meta
+      property="og:description"
+      content="Stay updated with the latest news and articles in technology and programming."
+    />
+    <meta property="og:title" content="Home > Twitter Light" />
+    <meta property="og:site_name" content="Twitter Light" />
+    <meta property="og:see_also" content="https://kerllouskhairy987.github.io/Tailwind-Twitter-Project" />
+    <!-- Link Of Home Page GitHub -->
+
+    <!-- Google+ Meta Info -->
+    <meta itemprop="name" content="Tweeter Light" />
+    <meta
+      itemprop="description"
+      content="Stay updated with the latest news and articles in technology and programming. Follow us for top-notch content and valuable insights."
+    />
+    <meta itemprop="image" content="https://kerllouskhairy987.github.io/Tailwind-Twitter-Project/img/twitter-light.jpg" />
+
+    <!-- Twitter Meta Info -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://kerllouskhairy987.github.io/Tailwind-Twitter-Project" />
+    <meta name="twitter:title" content="Twitter Light" />
+    <meta
+      name="twitter:description"
+      content="Stay updated with the latest news and articles in technology and programming. Follow us for top-notch content and valuable insights."
+    />
+    <meta name="twitter:image" content="https://kerllouskhairy987.github.io/Tailwind-Twitter-Project/img/twitter-light.jpg" />
+
+    <!-- End Meta Tages *********************-->
+
+    <!-- Tailwind Links *********************-->
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <!-- Icons Link *************************-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Font Family *************************-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS File Styling ********************-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/icon.png" type="png" />
+  </head>
+
+  <!--  -->
+
+  <body class="dark:bg-slate-950 font-myFont">
+    <!-- Start Header ************************-->
+    <header class="header-part">
+      <div class="flex justify-between items-center py-3">
+        <div class="text-blue-600 text-3xl">
+          <a href="index.html"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+        <div class="btn-mode" onclick="selectMode()">
+          <i
+            class="fa-solid fa-sun icon-mode dark:animate-mode dark:animate-stop"
+          ></i>
+        </div>
+      </div>
+    </header>
+    <!-- End Header **************************-->
+    <div class="container flex mt-5">
+      <!-- Start Aside Part ****************-->
+      <aside class="aside-styling">
+        <a href="#" class="link-aside text-blue-600" title="Home">
+          <span class="link-aside-icon"><i class="fa-solid fa-house"></i></span>
+          <span class="xl:block hidden">home</span>
+        </a>
+
+        <a href="#" class="link-aside" title="Explore">
+          <span class="link-aside-icon"
+            ><i class="fa-solid fa-hashtag"></i
+          ></span>
+          <span class="xl:block hidden">explore</span>
+        </a>
+
+        <a href="#" class="link-aside" title="Notification">
+          <span class="link-aside-icon"><i class="fa-solid fa-bell"></i></span>
+          <span class="xl:block hidden">notification</span>
+        </a>
+
+        <a href="#" class="link-aside" title="Messages">
+          <span class="link-aside-icon"
+            ><i class="fa-solid fa-envelope"></i
+          ></span>
+          <span class="xl:block hidden">messages</span>
+        </a>
+
+        <a href="#" class="link-aside" title="Bookmarks">
+          <span class="link-aside-icon"
+            ><i class="fa-regular fa-bookmark"></i
+          ></span>
+          <span class="xl:block hidden">bookmarks</span>
+        </a>
+
+        <a href="#" class="link-aside" title="Lists">
+          <span class="link-aside-icon"><i class="fa-solid fa-list"></i></span>
+          <span class="xl:block hidden">lists</span>
+        </a>
+
+        <a href="#" class="link-aside" title="Profile">
+          <span class="link-aside-icon"><i class="fa-solid fa-user"></i></span>
+          <span class="xl:block hidden">profile</span>
+        </a>
+
+        <a href="#" class="link-aside" title="More">
+          <span class="link-aside-icon"
+            ><i class="fa-solid fa-ellipsis"></i
+          ></span>
+          <span class="xl:block hidden">more</span>
+        </a>
+
+        <button class="btn-tweet">
+          <span class="link-aside-icon xl:hidden"
+            ><i class="fa-solid fa-feather"></i
+          ></span>
+          <span
+            class="xl:block hidden xl:py-2 xl:text-xl tracking-wider capitalize"
+            >tweet</span
+          >
+        </button>
+
+        <div class="flex justify-between items-center w-full mt-auto">
+          <div class="flex items-center justify-center">
+            <div class="">
+              <img
+                class="block mx-auto rounded-full max-w-10 max-h-10 shrink-0"
+                href="https://pbs.twimg.com/profile_images/1444753598328496128/hCCopfyz_400x400.jpg"
+                target="_black"
+                src="https://pbs.twimg.com/profile_images/1444753598328496128/hCCopfyz_400x400.jpg"
+                alt="Profile User"
+              />
+            </div>
+
+            <div class="flex-col xl:ms-3 hidden xl:block dark:text-white">
+              <h4>Kero Khairy</h4>
+              <span class="text-sm lowercase block -mt-1">kero@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="hidden xl:block dark:text-white cursor-pointer">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+      </aside>
+      <!-- End Aside Part ******************-->
+      <!-- Start Mian part *****************-->
+      <main class="main-class">
+        <div class="home-part">
+          <h3 class="home-word">home</h3>
+          <a class="text-2xl text-blue-600" href="index.html"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+
+        <div
+          class="bg-white dark:bg-slate-950 px-4 py-3 border-b border-gray-300"
+        >
+          <div class="flex">
+            <img
+              class="profile-image"
+              src="https://pbs.twimg.com/profile_images/1444753598328496128/hCCopfyz_400x400.jpg"
+              alt="Profile Image"
+            />
+            <textarea
+              class="area"
+              name="textArea"
+              id="area"
+              placeholder="What's happening?"
+            ></textarea>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <div class="text-sm md:text-lg text-blue-400">
+              <a title="image" href="#"
+                ><i class="fa-solid fa-image me-3"></i
+              ></a>
+              <a title="pen" href="#"
+                ><i class="fa-solid fa-marker me-3"></i
+              ></a>
+              <a title="search" href="#"
+                ><i class="fa-solid fa-magnifying-glass-plus me-3"></i
+              ></a>
+              <a title="microphone" href="#"
+                ><i class="fa-solid fa-microphone-slash"></i
+              ></a>
+            </div>
+            <button type="submit" class="btn-home-tweet">tweet</button>
+          </div>
+        </div>
+
+        <div
+          class="px-4 py-3 flex bg-white dark:bg-slate-950 border border-b-gray-300"
+        >
+          <img
+            class="profile-image"
+            src="https://pbs.twimg.com/profile_images/1444753598328496128/hCCopfyz_400x400.jpg"
+            alt="Profile Image"
+          />
+
+          <div>
+            <div class="pt-2 flex items-start">
+              <h3 class="me-2 font-bold line-clamp-1 dark:text-white">
+                Kerolos Khairy
+              </h3>
+              <span class="block text-slate-500 text-sm line-clamp-1"
+                >@kyrlskhyry . Jun 1</span
+              >
+            </div>
+
+            <p class="dark:text-white mt-2 line-clamp-4">
+              Any fool can write code that a computer can understand. Good
+              programmers write code that humans can understand. Any fool can
+              write code that a computer can understand. Good programmers write
+              code that humans can understand.
+            </p>
+
+            <h4 class="text-sm font-bold tracking-wider my-3 dark:text-white">
+              Experience is the name everyone gives to their
+              <a class="text-blue-500" title="hashtag" href="#">#mistakes</a>
+            </h4>
+
+            <h5 class="dark:text-white font-bold text-lg line-clamp-1">
+              Simplicity is the soul of efficiency.
+            </h5>
+
+            <img
+              class="rounded-2xl mt-3 border-gray-300 border"
+              src="https://images.nature.com/original/magazine-assets/d41586-019-00653-5/d41586-019-00653-5_16459150.jpg"
+              alt="Programming image"
+            />
+
+            <div
+              class="flex justify-between my-4 px-0 xl:px-3 text-xs xl:text-lg text-gray-500 dark:text-white"
+            >
+              <div class="cursor-pointer hover:text-blue-400">
+                <i class="fa-solid fa-comment me-0 xl:me-2"></i>
+                <span>12.5k</span>
+              </div>
+              <div class="cursor-pointer hover:text-green-400">
+                <i class="fa-solid fa-retweet me-0 xl:me-2"></i>
+                <span>14k</span>
+              </div>
+              <div class="cursor-pointer hover:text-red-700">
+                <i class="fa-solid fa-heart me-0 xl:me-2"></i>
+                <span>15k</span>
+              </div>
+              <div class="cursor-pointer hover:text-blue-700">
+                <i class="fa-solid fa-share"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="px-4 py-3 flex bg-white dark:bg-slate-950 border border-b-gray-300"
+        >
+          <img
+            class="profile-image"
+            src="https://pbs.twimg.com/profile_images/1444753598328496128/hCCopfyz_400x400.jpg"
+            alt="Profile Image"
+          />
+
+          <div>
+            <div class="pt-2 flex items-start">
+              <h3 class="me-2 font-bold line-clamp-1 dark:text-white">
+                Kerolos Khairy
+              </h3>
+              <span class="block text-slate-500 text-sm line-clamp-1"
+                >@kyrlskhyry . Jun 1</span
+              >
+            </div>
+
+            <p class="dark:text-white mt-2 line-clamp-4">
+              Any fool can write code that a computer can understand. Good
+              programmers write code that humans can understand. Any fool can
+              write code that a computer can understand. Good programmers write
+              code that humans can understand.
+            </p>
+
+            <h4 class="text-sm font-bold tracking-wider my-3 dark:text-white">
+              Experience is the name everyone gives to their
+              <a class="text-blue-500" title="hashtag" href="#">#mistakes</a>
+            </h4>
+
+            <h5 class="dark:text-white font-bold text-lg line-clamp-1">
+              Simplicity is the soul of efficiency.
+            </h5>
+
+            <img
+              class="rounded-2xl mt-3 w-full border-gray-300 border"
+              src="img/flower.jpg"
+              alt="Flower Image"
+            />
+
+            <div
+              class="flex justify-between my-4 px-0 xl:px-3 text-xs xl:text-lg text-gray-500 dark:text-white"
+            >
+              <div class="cursor-pointer hover:text-blue-400">
+                <i class="fa-solid fa-comment me-0 xl:me-2"></i>
+                <span>12.5k</span>
+              </div>
+              <div class="cursor-pointer hover:text-green-400">
+                <i class="fa-solid fa-retweet me-0 xl:me-2"></i>
+                <span>14k</span>
+              </div>
+              <div class="cursor-pointer hover:text-red-700">
+                <i class="fa-solid fa-heart me-0 xl:me-2"></i>
+                <span>15k</span>
+              </div>
+              <div class="cursor-pointer hover:text-blue-700">
+                <i class="fa-solid fa-share"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="px-4 py-3 flex bg-white dark:bg-slate-950 border border-b-gray-300"
+        >
+          <img
+            class="profile-image"
+            src="https://pbs.twimg.com/profile_images/1444753598328496128/hCCopfyz_400x400.jpg"
+            alt="Profile Image"
+          />
+
+          <div>
+            <div class="pt-2 flex items-start">
+              <h3 class="me-2 font-bold line-clamp-1 dark:text-white">
+                Kerolos Khairy
+              </h3>
+              <span class="block text-slate-500 text-sm line-clamp-1"
+                >@kyrlskhyry . Jun 1</span
+              >
+            </div>
+
+            <p class="dark:text-white mt-2 line-clamp-4">
+              Any fool can write code that a computer can understand. Good
+              programmers write code that humans can understand. Any fool can
+              write code that a computer can understand. Good programmers write
+              code that humans can understand.
+            </p>
+
+            <h4 class="text-sm font-bold tracking-wider my-3 dark:text-white">
+              Experience is the name everyone gives to their
+              <a class="text-blue-500" title="hashtag" href="#">#mistakes</a>
+            </h4>
+
+            <h5 class="dark:text-white font-bold text-lg line-clamp-1">
+              Simplicity is the soul of efficiency.
+            </h5>
+
+            <img
+              class="rounded-2xl w-full mt-3 border-gray-300 border"
+              src="img/programming.jpg"
+              alt="Programming Image At Workspace"
+            />
+
+            <div
+              class="flex justify-between my-4 px-0 xl:px-3 text-xs xl:text-lg text-gray-500 dark:text-white"
+            >
+              <div class="cursor-pointer hover:text-blue-400">
+                <i class="fa-solid fa-comment me-0 xl:me-2"></i>
+                <span>12.5k</span>
+              </div>
+              <div class="cursor-pointer hover:text-green-400">
+                <i class="fa-solid fa-retweet me-0 xl:me-2"></i>
+                <span>14k</span>
+              </div>
+              <div class="cursor-pointer hover:text-red-700">
+                <i class="fa-solid fa-heart me-0 xl:me-2"></i>
+                <span>15k</span>
+              </div>
+              <div class="cursor-pointer hover:text-blue-700">
+                <i class="fa-solid fa-share"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="px-4 py-3 flex bg-white dark:bg-slate-950 border border-b-gray-300"
+        >
+          <img
+            class="profile-image"
+            src="https://pbs.twimg.com/profile_images/1444753598328496128/hCCopfyz_400x400.jpg"
+            alt="Profile Image"
+          />
+
+          <div>
+            <div class="pt-2 flex items-start">
+              <h3 class="me-2 font-bold line-clamp-1 dark:text-white">
+                Kerolos Khairy
+              </h3>
+              <span class="block text-slate-500 text-sm line-clamp-1"
+                >@kyrlskhyry . Jun 1</span
+              >
+            </div>
+
+            <p class="dark:text-white mt-2 line-clamp-4">
+              Any fool can write code that a computer can understand. Good
+              programmers write code that humans can understand. Any fool can
+              write code that a computer can understand. Good programmers write
+              code that humans can understand.
+            </p>
+
+            <h4 class="text-sm font-bold tracking-wider my-3 dark:text-white">
+              Experience is the name everyone gives to their
+              <a class="text-blue-500" title="hashtag" href="#">#mistakes</a>
+            </h4>
+
+            <h5 class="dark:text-white font-bold text-lg line-clamp-1">
+              Simplicity is the soul of efficiency.
+            </h5>
+
+            <img
+              class="rounded-2xl w-full mt-3 border-gray-300 border"
+              src="img/img.jpg"
+              alt="Image"
+            />
+
+            <div
+              class="flex justify-between my-4 px-0 xl:px-3 text-xs xl:text-lg text-gray-500 dark:text-white"
+            >
+              <div class="cursor-pointer hover:text-blue-400">
+                <i class="fa-solid fa-comment me-0 xl:me-2"></i>
+                <span>12.5k</span>
+              </div>
+              <div class="cursor-pointer hover:text-green-400">
+                <i class="fa-solid fa-retweet me-0 xl:me-2"></i>
+                <span>14k</span>
+              </div>
+              <div class="cursor-pointer hover:text-red-700">
+                <i class="fa-solid fa-heart me-0 xl:me-2"></i>
+                <span>15k</span>
+              </div>
+              <div class="cursor-pointer hover:text-blue-700">
+                <i class="fa-solid fa-share"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="px-4 py-3 flex bg-white dark:bg-slate-950 border border-b-gray-300"
+        >
+          <img
+            class="profile-image"
+            src="https://pbs.twimg.com/profile_images/1444753598328496128/hCCopfyz_400x400.jpg"
+            alt="Profile Image"
+          />
+
+          <div>
+            <div class="pt-2 flex items-start">
+              <h3 class="me-2 font-bold line-clamp-1 dark:text-white">
+                Kerolos Khairy
+              </h3>
+              <span class="block text-slate-500 text-sm line-clamp-1"
+                >@kyrlskhyry . Jun 1</span
+              >
+            </div>
+
+            <p class="dark:text-white mt-2 line-clamp-4">
+              Any fool can write code that a computer can understand. Good
+              programmers write code that humans can understand. Any fool can
+              write code that a computer can understand. Good programmers write
+              code that humans can understand.
+            </p>
+
+            <h4 class="text-sm font-bold tracking-wider my-3 dark:text-white">
+              Experience is the name everyone gives to their
+              <a class="text-blue-500" title="hashtag" href="#">#mistakes</a>
+            </h4>
+
+            <h5 class="dark:text-white font-bold text-lg line-clamp-1">
+              Simplicity is the soul of efficiency.
+            </h5>
+
+            <img
+              class="rounded-2xl w-full mt-3 border-gray-300 border"
+              src="img/people3.jpg"
+              alt="people Image Playing"
+            />
+
+            <div
+              class="flex justify-between my-4 px-0 xl:px-3 text-xs xl:text-lg text-gray-500 dark:text-white"
+            >
+              <div class="cursor-pointer hover:text-blue-400">
+                <i class="fa-solid fa-comment me-0 xl:me-2"></i>
+                <span>12.5k</span>
+              </div>
+              <div class="cursor-pointer hover:text-green-400">
+                <i class="fa-solid fa-retweet me-0 xl:me-2"></i>
+                <span>14k</span>
+              </div>
+              <div class="cursor-pointer hover:text-red-700">
+                <i class="fa-solid fa-heart me-0 xl:me-2"></i>
+                <span>15k</span>
+              </div>
+              <div class="cursor-pointer hover:text-blue-700">
+                <i class="fa-solid fa-share"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="px-4 py-3 flex bg-white dark:bg-slate-950 border border-b-gray-300"
+        >
+          <img
+            class="profile-image"
+            src="https://pbs.twimg.com/profile_images/1444753598328496128/hCCopfyz_400x400.jpg"
+            alt="Profile Image"
+          />
+
+          <div>
+            <div class="pt-2 flex items-start">
+              <h3 class="me-2 font-bold line-clamp-1 dark:text-white">
+                Kerolos Khairy
+              </h3>
+              <span class="block text-slate-500 text-sm line-clamp-1"
+                >@kyrlskhyry . Jun 1</span
+              >
+            </div>
+
+            <p class="dark:text-white mt-2 line-clamp-4">
+              Any fool can write code that a computer can understand. Good
+              programmers write code that humans can understand. Any fool can
+              write code that a computer can understand. Good programmers write
+              code that humans can understand.
+            </p>
+
+            <h4 class="text-sm font-bold tracking-wider my-3 dark:text-white">
+              Experience is the name everyone gives to their
+              <a class="text-blue-500" title="hashtag" href="#">#mistakes</a>
+            </h4>
+
+            <h5 class="dark:text-white font-bold text-lg line-clamp-1">
+              Simplicity is the soul of efficiency.
+            </h5>
+
+            <img
+              class="rounded-2xl w-full mt-3 border-gray-300 border"
+              src="img/people2.jpg"
+              alt="people Image coatch"
+            />
+
+            <div
+              class="flex justify-between my-4 px-0 xl:px-3 text-xs xl:text-lg text-gray-500 dark:text-white"
+            >
+              <div class="cursor-pointer hover:text-blue-400">
+                <i class="fa-solid fa-comment me-0 xl:me-2"></i>
+                <span>12.5k</span>
+              </div>
+              <div class="cursor-pointer hover:text-green-400">
+                <i class="fa-solid fa-retweet me-0 xl:me-2"></i>
+                <span>14k</span>
+              </div>
+              <div class="cursor-pointer hover:text-red-700">
+                <i class="fa-solid fa-heart me-0 xl:me-2"></i>
+                <span>15k</span>
+              </div>
+              <div class="cursor-pointer hover:text-blue-700">
+                <i class="fa-solid fa-share"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="px-4 py-3 flex bg-white dark:bg-slate-950 border border-b-gray-300"
+        >
+          <img
+            class="profile-image"
+            src="https://pbs.twimg.com/profile_images/1444753598328496128/hCCopfyz_400x400.jpg"
+            alt="Profile Image"
+          />
+
+          <div>
+            <div class="pt-2 flex items-start">
+              <h3 class="me-2 font-bold line-clamp-1 dark:text-white">
+                Kerolos Khairy
+              </h3>
+              <span class="block text-slate-500 text-sm line-clamp-1"
+                >@kyrlskhyry . Jun 1</span
+              >
+            </div>
+
+            <p class="dark:text-white mt-2 line-clamp-4">
+              Any fool can write code that a computer can understand. Good
+              programmers write code that humans can understand. Any fool can
+              write code that a computer can understand. Good programmers write
+              code that humans can understand.
+            </p>
+
+            <h4 class="text-sm font-bold tracking-wider my-3 dark:text-white">
+              Experience is the name everyone gives to their
+              <a class="text-blue-500" title="hashtag" href="#">#mistakes</a>
+            </h4>
+
+            <h5 class="dark:text-white font-bold text-lg line-clamp-1">
+              Simplicity is the soul of efficiency.
+            </h5>
+
+            <img
+              class="rounded-2xl mt-3 w-full border-gray-300 border"
+              src="img/people.jpg"
+              alt="people Image"
+            />
+
+            <div
+              class="flex justify-between my-4 px-0 xl:px-3 text-xs xl:text-lg text-gray-500 dark:text-white"
+            >
+              <div class="cursor-pointer hover:text-blue-400">
+                <i class="fa-solid fa-comment me-0 xl:me-2"></i>
+                <span>12.5k</span>
+              </div>
+              <div class="cursor-pointer hover:text-green-400">
+                <i class="fa-solid fa-retweet me-0 xl:me-2"></i>
+                <span>14k</span>
+              </div>
+              <div class="cursor-pointer hover:text-red-700">
+                <i class="fa-solid fa-heart me-0 xl:me-2"></i>
+                <span>15k</span>
+              </div>
+              <div class="cursor-pointer hover:text-blue-700">
+                <i class="fa-solid fa-share"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="px-4 py-3 flex bg-white dark:bg-slate-950 border border-b-gray-300"
+        >
+          <img
+            class="profile-image"
+            src="https://pbs.twimg.com/profile_images/1444753598328496128/hCCopfyz_400x400.jpg"
+            alt="Profile Image"
+          />
+
+          <div>
+            <div class="pt-2 flex items-start">
+              <h3 class="me-2 font-bold line-clamp-1 dark:text-white">
+                Kerolos Khairy
+              </h3>
+              <span class="block text-slate-500 text-sm line-clamp-1"
+                >@kyrlskhyry . Jun 1</span
+              >
+            </div>
+
+            <p class="dark:text-white mt-2 line-clamp-4">
+              Any fool can write code that a computer can understand. Good
+              programmers write code that humans can understand. Any fool can
+              write code that a computer can understand. Good programmers write
+              code that humans can understand.
+            </p>
+
+            <h4 class="text-sm font-bold tracking-wider my-3 dark:text-white">
+              Experience is the name everyone gives to their
+              <a class="text-blue-500" title="hashtag" href="#">#mistakes</a>
+            </h4>
+
+            <h5 class="dark:text-white font-bold text-lg line-clamp-1">
+              Simplicity is the soul of efficiency.
+            </h5>
+
+            <img
+              class="rounded-2xl w-full mt-3 border-gray-300 border"
+              src="img/foot2.jpg"
+              alt="Football Player"
+            />
+
+            <div
+              class="flex justify-between my-4 px-0 xl:px-3 text-xs xl:text-lg text-gray-500 dark:text-white"
+            >
+              <div class="cursor-pointer hover:text-blue-400">
+                <i class="fa-solid fa-comment me-0 xl:me-2"></i>
+                <span>12.5k</span>
+              </div>
+              <div class="cursor-pointer hover:text-green-400">
+                <i class="fa-solid fa-retweet me-0 xl:me-2"></i>
+                <span>14k</span>
+              </div>
+              <div class="cursor-pointer hover:text-red-700">
+                <i class="fa-solid fa-heart me-0 xl:me-2"></i>
+                <span>15k</span>
+              </div>
+              <div class="cursor-pointer hover:text-blue-700">
+                <i class="fa-solid fa-share"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white dark:bg-slate-950 mt-4 py-3">
+          <div
+            class="animate-spin mx-auto w-11 h-11 rounded-full border-4 border-r-blue-600 bg-white/60 dark:bg-slate-950"
+          ></div>
+        </div>
+      </main>
+      <!-- End Main Part *******************-->
+      <!-- Start Article Part **************-->
+      <article class="article-part">
+        <label
+          for="search"
+          class="relative cursor-pointer min-w-full h-10 py-2 rounded-full bg-gray-300 dark: dark:bg-black/60"
+        >
+          <i
+            class="fa-solid fa-magnifying-glass absolute top-1/2 left-3 -translate-y-1/2 dark:text-white"
+          ></i>
+          <input
+            class="ps-9 h-10 w-full bg-transparent outline-none pe-3 dark:caret-white"
+            type="search"
+            id="search"
+            name="inSearch"
+            placeholder="Search Tweeter"
+          />
+        </label>
+
+        <div
+          class="rounded-2xl overflow-hidden mt-3 bg-gray-200/50 dark:bg-black/60"
+        >
+          <h3
+            class="px-4 py-3 border-b border-gray-300 font-bold font-xl dark:text-white"
+          >
+            What's happening
+          </h3>
+          <div class="px-4 py-3 border-b border-gray-300">
+            <h3 class="font-bold font-xl dark:text-white">#Palestine</h3>
+            <span class="text-sm text-gray-500 block -mt-1">29.7k Tweet</span>
+          </div>
+          <div class="px-3 py-3 border-b border-b-gray-300">
+            <h3 class="font-bold font-xl dark:text-white">#Palestine</h3>
+            <span class="text-sm text-gray-500 block -mt-1">29.7k Tweet</span>
+          </div>
+          <div class="px-3 py-3 border-b border-b-gray-300">
+            <h3 class="font-bold font-xl dark:text-white">#Palestine</h3>
+            <span class="text-sm text-gray-500 block -mt-1">29.7k Tweet</span>
+          </div>
+          <a class="px-3 py-3 block text-blue-500" href="#">Show more</a>
+        </div>
+
+        <div
+          class="rounded-2xl overflow-hidden mt-3 bg-gray-200/50 dark:bg-black/60"
+        >
+          <h4
+            class="px-3 py-3 font-bold font-xl dark:text-white border-b border-gray-300"
+          >
+            Who to follow
+          </h4>
+
+          <div
+            class="flex justify-between items-center border-b border-gray-300 px-4 py-3"
+          >
+            <div class="flex items-center">
+              <img
+                class="profile-image"
+                src="https://pbs.twimg.com/profile_images/1444753598328496128/hCCopfyz_400x400.jpg"
+                alt="Profile"
+              />
+
+              <div>
+                <h2 class="font-bold text-sm dark:text-white">keroloskhairy</h2>
+                <span class="block -mt-1 text-gray-500 text-xs"
+                  >@kylskhyry80</span
+                >
+              </div>
+            </div>
+
+            <button
+              class="rounded-full border-2 border-blue-500 text-blue-500 px-5 py-1 text-sm"
+            >
+              Follow
+            </button>
+          </div>
+          <div
+            class="flex justify-between items-center border-b border-gray-300 px-4 py-3"
+          >
+            <div class="flex items-center">
+              <img
+                class="profile-image"
+                src="https://pbs.twimg.com/profile_images/1444753598328496128/hCCopfyz_400x400.jpg"
+                alt="Profile"
+              />
+
+              <div>
+                <h2 class="font-bold text-sm dark:text-white">keroloskhairy</h2>
+                <span class="block -mt-1 text-gray-500 text-xs"
+                  >@kylskhyry80</span
+                >
+              </div>
+            </div>
+
+            <button
+              class="rounded-full border-2 border-blue-500 text-blue-500 px-5 py-1 text-sm"
+            >
+              Follow
+            </button>
+          </div>
+          <div
+            class="border-b border-gray-300 shadow rounded-md p-4 max-w-sm w-full mx-auto h-20"
+          >
+            <div class="animate-pulse flex space-x-4">
+              <div class="flex-1 space-y-6 py-1">
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center">
+                    <div class="rounded-full bg-slate-700 h-10 w-10 me-2"></div>
+                    <div>
+                      <div class="h-2 bg-slate-700 rounded w-28 mb-3"></div>
+                      <div class="h-2 bg-slate-700 rounded w-28"></div>
+                    </div>
+                  </div>
+                  <div class="h-3 bg-slate-700 rounded w-24"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="px-3 py-3 block text-blue-500" href="#">Show more</a>
+        </div>
+      </article>
+      <!-- End Article Part ****************-->
+    </div>
+
+    <!-- JS Links *****************************-->
+    <script src="script.js"></script>
+  </body>
+</html>
